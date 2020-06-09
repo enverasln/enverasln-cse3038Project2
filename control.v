@@ -1,11 +1,13 @@
-module control(in,fun,regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop2);
+module control(in,fun,regdest,alusrc,ext,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop2, fout);
 input [5:0] in, fun;
 output regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop2;
+output [5:0] fout;
+output [1:0] ext;
 wire rformat,iformat,jformat,lw,sw,beq,ori,bltz,jmsub,baln,jrs,sll;
 
 // Define the R-Type instructions jmsub
 assign jmsub=(fun[5]) & (~fun[4]) & (~fun[3]) & (~fun[2]) & (fun[1]) & (~fun[0]);
-assign sll=(~fun[5]) & (~fun[4]) & (~fun[3]) & (~fun[2]) & (~fun[1]) & (~fun[0]);
+assign sll=((~fun[5]) & (~fun[4]) & (~fun[3]) & (~fun[2]) & (~fun[1]) & (~fun[0])) & ~iformat & ~lw & ~sw;
 assign rformat=~|in;
 
 // Define the I-Type instructions ori, bltz
@@ -21,12 +23,19 @@ assign iformat = beq|ori|bltz;
 assign baln=(~in[5]) & (in[4]) & (in[3]) & (~in[2]) & (in[1]) & (in[0]);
 assign jformat = baln;
 assign regdest=rformat;
-assign alusrc=lw|sw;
+assign alusrc=lw|sw|ori|sll;
+assign ext={sll ? 1'b1 : 1'b0, ori ? 1'b1 : 1'b0};
 assign memtoreg=lw;
-assign regwrite=rformat|lw;
+assign regwrite=rformat|lw|ori|sll;
 assign memread=lw;
 assign memwrite=sw;
 assign branch=beq;
 assign aluop1=rformat | jformat;
 assign aluop2=iformat | jformat;
+
+assign fout= ori ? 6'b100101 : fun;
+
+
+
+
 endmodule

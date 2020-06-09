@@ -1,1 +1,212 @@
+{{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alu32.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alu32.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:10 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alu32.v 
+-- Compiling module alu32
 
+Top level modules:
+	alu32
+End time: 14:29:10 on Jun 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/processor.v} {1 {vlog -work work -stats=none {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/processor.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module processor
+
+Top level modules:
+	processor
+
+} {} {}} {{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/processor.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/processor.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:09 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/processor.v 
+-- Compiling module processor
+
+Top level modules:
+	processor
+End time: 14:29:09 on Jun 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/adder.v} {1 {vlog -work work -stats=none {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/adder.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} {{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/adder.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/adder.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:10 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/adder.v 
+-- Compiling module adder
+
+Top level modules:
+	adder
+End time: 14:29:10 on Jun 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:11 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext.v 
+-- Compiling module zeroext
+
+Top level modules:
+	zeroext
+End time: 14:29:12 on Jun 09,2020, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+
+} {} {}} {{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:10 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v 
+-- Compiling module control
+** Warning: C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v(38): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	control
+End time: 14:29:11 on Jun 09,2020, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+
+} {} {}} {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext5_32.v} {1 {vlog -work work -stats=none {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext5_32.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module zeroext5_32
+
+Top level modules:
+	zeroext5_32
+
+} {} {}} {{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext5_32.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext5_32.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:12 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext5_32.v 
+-- Compiling module zeroext
+
+Top level modules:
+	zeroext
+End time: 14:29:12 on Jun 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_5.v} {1 {vlog -work work -stats=none {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_5.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mult2_to_1_5
+
+Top level modules:
+	mult2_to_1_5
+
+} {} {}} {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/signext.v} {1 {vlog -work work -stats=none {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/signext.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module signext
+
+Top level modules:
+	signext
+
+} {} {}} {{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/signext.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/signext.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:09 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/signext.v 
+-- Compiling module signext
+
+Top level modules:
+	signext
+End time: 14:29:09 on Jun 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/shift.v} {1 {vlog -work work -stats=none {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/shift.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module shift
+
+Top level modules:
+	shift
+
+} {} {}} {{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alucont.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alucont.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:10 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alucont.v 
+-- Compiling module alucont
+
+Top level modules:
+	alucont
+End time: 14:29:10 on Jun 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/shift.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/shift.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:11 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/shift.v 
+-- Compiling module shift
+
+Top level modules:
+	shift
+End time: 14:29:11 on Jun 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alucont.v} {1 {vlog -work work -stats=none {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alucont.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alucont
+
+Top level modules:
+	alucont
+
+} {} {}} {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alu32.v} {1 {vlog -work work -stats=none {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alu32.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu32
+
+Top level modules:
+	alu32
+
+} {} {}} {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext.v} {1 {vlog -work work -stats=none {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module zeroext
+
+Top level modules:
+	zeroext
+
+} {} {}} {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_32.v} {1 {vlog -work work -stats=none {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_32.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mult2_to_1_32
+
+Top level modules:
+	mult2_to_1_32
+
+} {} {}} {{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_5.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_5.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:11 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_5.v 
+-- Compiling module mult2_to_1_5
+
+Top level modules:
+	mult2_to_1_5
+End time: 14:29:11 on Jun 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_32.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_32.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:11 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_32.v 
+-- Compiling module mult2_to_1_32
+
+Top level modules:
+	mult2_to_1_32
+End time: 14:29:11 on Jun 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult4_to_1_32.v} {1 {vlog -work work -stats=none {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult4_to_1_32.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mult4_to_1_32
+
+Top level modules:
+	mult4_to_1_32
+
+} {} {}} {{C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult4_to_1_32.v}} {1 {vlog -work work {C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult4_to_1_32.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 14:29:12 on Jun 09,2020
+vlog -reportprogress 300 -work work C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult4_to_1_32.v 
+-- Compiling module mult4_to_1_32
+
+Top level modules:
+	mult4_to_1_32
+End time: 14:29:12 on Jun 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}}

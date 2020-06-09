@@ -8,11 +8,16 @@ datab,	//Read data 2 output of Register File
 out2,		//Output of mux with ALUSrc control-mult2
 out3,		//Output of mux with MemToReg control-mult3
 out4,		//Output of mux with (Branch&ALUZero) control-mult4
+out5,		//Output of mux with zext control-mult5
+out6,		//Output of mux with ext[1] for sll
 sum,		//ALU result
 extad,	//Output of sign-extend unit
+zextad, //Output of zero-extend unit
+exshad, //Output of extented shift amount unit
 adder1out,	//Output of adder which adds PC and 4-add1
 adder2out,	//Output of adder which adds PC+4 and 2 shifted sign-extend result-add2
 sextad;	//Output of shift left 2 unit
+
 
 wire [5:0] inst31_26;	//31-26 bits of instruction
 wire [4:0] 
@@ -32,6 +37,8 @@ wire zout,	//Zero output of ALU
 pcsrc,	//Output of AND gate with Branch and ZeroOut inputs
 //Control signals
 regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop0;
+wire [1:0] ext;
+wire [5:0] fout;
 
 //32-size register file (32 bit(1 word) for each register)
 reg [31:0] registerfile[0:31];
@@ -76,7 +83,12 @@ assign dpack={datmem[sum[5:0]],datmem[sum[5:0]+1],datmem[sum[5:0]+2],datmem[sum[
 mult2_to_1_5  mult1(out1, instruc[20:16],instruc[15:11],regdest);
 
 //mux with ALUSrc control
-mult2_to_1_32 mult2(out2, datab,extad,alusrc);
+mult2_to_1_32 mult2(out2, datab,out5,alusrc);
+
+mult2_to_1_32 mult6(out6, dataa,datab, ext[1]);
+
+//mux with ext control
+mult4_to_1_32 mult5(out5, extad, zextad, exshad, exshad,ext[0], ext[1]);
 
 //mux with MemToReg control
 mult2_to_1_32 mult3(out3, sum,dpack,memtoreg);
@@ -91,7 +103,7 @@ pc=out4;
 // alu, adder and control logic connections
 
 //ALU unit
-alu32 alu1(sum,dataa,out2,zout,gout);
+alu32 alu1(sum,out6,out2,zout,gout);
 
 //adder which adds PC and 4
 adder add1(pc,32'h4,adder1out);
@@ -100,14 +112,20 @@ adder add1(pc,32'h4,adder1out);
 adder add2(adder1out,sextad,adder2out);
 
 //Control unit
-control cont(instruc[31:26],regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,
-aluop1,aluop0);
+control cont(instruc[31:26],instruc[5:0],regdest,alusrc,ext,memtoreg,regwrite,memread,memwrite,branch,
+aluop1,aluop0,fout);
 
 //Sign extend unit
 signext sext(instruc[15:0],extad);
 
+//Zero extend unit
+zeroext zext(instruc[15:0],zextad);
+
+//Zero extend unit 5 to 32
+zeroext5_32 zext_5_32(instruc[10:6],exshad);
+
 //ALU control unit
-alucont acont(aluop1,aluop0,instruc[3],instruc[2], instruc[1], instruc[0] ,gout);
+alucont acont(aluop1,aluop0,fout,fout[3],fout[2], fout[1], fout[0] ,gout);
 
 //Shift-left 2 unit
 shift shift2(sextad,extad);
