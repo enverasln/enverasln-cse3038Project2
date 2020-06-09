@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vcontrol
+!s110 1591686101
+!i10b 1
+!s100 GZfff>83BNX1CeRA=eUFC1
+IZ_j94zZ^<]e;iedk`X>@E1
+VDg1SIo80bB@j0V0VzS_@n1
+dC:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2
+w1591685796
+8C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v
+FC:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v
+L0 1
+OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1591686101.000000
+!s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v|
+!s101 -O0
+!i113 1
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
