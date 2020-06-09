@@ -1,11 +1,11 @@
-module alu32(sum,a,b,zout,gin);//ALU operation according to the ALU control line values
+module alu32(sum,a,b,status,gin);//ALU operation according to the ALU control line values
 output [31:0] sum;
 input [31:0] a,b; 
 input [2:0] gin;//ALU control line
 reg [31:0] sum;
 reg [31:0] less;
-output zout;
-reg zout;
+output[2:0] status;
+reg [2:0] status;
 always @(a or b or gin)
 begin
 	case(gin)
@@ -20,6 +20,8 @@ begin
 	3'b101: sum=a<<b;
 	default: sum=31'bx;	
 	endcase
-zout=~(|sum);
+status[2]=~(|sum); // zero
+status[1]=sum[31]; // negative
+status[0]=(sum[31] & ~a[31] & ~b[31]) | (~sum[31] & a[31] & b[31]); // overflow
 end
 endmodule

@@ -1,9 +1,9 @@
-module alucont(aluop1,aluop0,fun, f3,f2,f1,f0,gout);//Figure 4.12 
-input aluop1,aluop0,f3,f2,f1,f0;
+module alucont(aluop1,aluop0,fun,gout);//Figure 4.12 
+input aluop1,aluop0;
 input [5:0] fun;
 output [2:0] gout;
 reg [2:0] gout;
-always @(aluop1 or aluop0 or f3 or f2 or f1 or f0)
+always @(aluop1 or aluop0 or fun)
 begin
 if(~(aluop1|aluop0))  gout=3'b010; // Load and Store word
 

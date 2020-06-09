@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Modeltech_pe_edu_10.4a/examples
 vadder
-Z0 !s110 1591705201
+Z0 !s110 1591742027
 !i10b 1
 !s100 Y;`Fz?LjC0QzPeNWf8_U<1
 IVJ?HU?6_[YhYCD77Q[hd71
@@ -23,7 +23,7 @@ Z3 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z4 !s108 1591705200.000000
+Z4 !s108 1591742027.000000
 !s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/adder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/adder.v|
 !s101 -O0
@@ -32,11 +32,11 @@ Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 valu32
 R0
 !i10b 1
-!s100 M56LMifbIMoF5=BcgiK^]3
-IoJJkc0dojL[X[WzRio`Ti0
+!s100 07oU0KkoSn]f>@zRXSgMA3
+I3K1R2__gc6;@Ak@8j=gE50
 R1
 R2
-w1591702360
+w1591720055
 8C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alu32.v
 FC:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alu32.v
 L0 1
@@ -44,7 +44,7 @@ R3
 r1
 !s85 0
 31
-Z6 !s108 1591705201.000000
+R4
 !s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alu32.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alu32.v|
 !s101 -O0
@@ -53,11 +53,11 @@ R5
 valucont
 R0
 !i10b 1
-!s100 2ic2g7[=980kl22RQk2mQ3
-IBElXXCk`DZi8986W[RWdK3
+!s100 g?L8X>Zo1J=45NjZKE[ZZ2
+I8063UWj:4JN<>SeTgf>IZ2
 R1
 R2
-w1591701902
+w1591733319
 8C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alucont.v
 FC:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alucont.v
 L0 1
@@ -65,7 +65,7 @@ R3
 r1
 !s85 0
 31
-R6
+R4
 !s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alucont.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/alucont.v|
 !s101 -O0
@@ -74,11 +74,11 @@ R5
 vcontrol
 R0
 !i10b 1
-!s100 ^QjXaBMTdDb;FOJn94f421
-I3_87IE^9o=D;iiXc@QQ[Y0
+!s100 6bG6[EP7PO][ekh@JC<Sg3
+IUmRS<mIm<ihL:P:BLMON30
 R1
 R2
-w1591705175
+w1591742007
 8C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v
 FC:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v
 L0 1
@@ -86,14 +86,35 @@ R3
 r1
 !s85 0
 31
-R6
+R4
 !s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/control.v|
 !s101 -O0
 !i113 1
 R5
+vjbcontrol
+Z6 !s110 1591742029
+!i10b 1
+!s100 =J><`YAInb9^8_HdZ9AF]3
+IKTP[=6QSlaZ1>OH@zm1C<1
+R1
+R2
+w1591740415
+8C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/jbcontrol.v
+FC:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/jbcontrol.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z7 !s108 1591742029.000000
+!s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/jbcontrol.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/jbcontrol.v|
+!s101 -O0
+!i113 1
+R5
 vmult2_to_1_32
-Z7 !s110 1591705202
+Z8 !s110 1591742028
 !i10b 1
 !s100 ^aXF>kbOQm5iDYT=bV7M11
 I4iBi6KHhg1S<2EJb[Q4Rn3
@@ -107,14 +128,14 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1591705202.000000
+Z9 !s108 1591742028.000000
 !s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_32.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_32.v|
 !s101 -O0
 !i113 1
 R5
 vmult2_to_1_5
-R0
+R8
 !i10b 1
 !s100 k]2`0V2=b67f6kc:ca8eK0
 I1hXGP]mPW=9PZOKUe?V:G3
@@ -128,14 +149,14 @@ R3
 r1
 !s85 0
 31
-R6
+R9
 !s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_5.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult2_to_1_5.v|
 !s101 -O0
 !i113 1
 R5
 vmult4_to_1_32
-R7
+R8
 !i10b 1
 !s100 AhJ;izYRQ;X8HN@5mG3kF1
 I[Cak677c^^EIKE3jb5Ee81
@@ -149,20 +170,20 @@ R3
 r1
 !s85 0
 31
-R8
+R9
 !s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult4_to_1_32.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/mult4_to_1_32.v|
 !s101 -O0
 !i113 1
 R5
 vprocessor
-Z9 !s110 1591705200
+R0
 !i10b 1
-!s100 a^c0blj98_Ha393GhF8E?2
-I=GV>J>eJFISIc4l[kKGgP0
+!s100 DI;0:LI]bjd4^?>eHg>ld2
+IP^jazJdaJUAFBJUP9SfjZ0
 R1
 R2
-w1591704757
+w1591739731
 8C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/processor.v
 FC:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/processor.v
 L0 1
@@ -177,7 +198,7 @@ R4
 !i113 1
 R5
 vshift
-R7
+R8
 !i10b 1
 !s100 GWP55OEfIRVA_6M>iSY8d2
 ID7fEZFa?h7VNd9:2M^27>3
@@ -191,14 +212,14 @@ R3
 r1
 !s85 0
 31
-R8
+R9
 !s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/shift.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/shift.v|
 !s101 -O0
 !i113 1
 R5
 vsignext
-R9
+R0
 !i10b 1
 !s100 JAEfRFLIAaX=@V<j@h[jS1
 Ij8hVII:1NLczS_om?IT8l3
@@ -219,7 +240,7 @@ R4
 !i113 1
 R5
 vzeroext
-R7
+R8
 !i10b 1
 !s100 ShZBlDm9Eb[1L2FR0F5DH1
 I?cGQWA]AMSz65>J;?5i^51
@@ -233,14 +254,14 @@ R3
 r1
 !s85 0
 31
-R8
+R9
 !s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext.v|
 !s101 -O0
 !i113 1
 R5
 vzeroext5_32
-R7
+R6
 !i10b 1
 !s100 BlZaCH<f>[cEd?WTU`ORS1
 ICLCdf;o<ff1[Di=GZz?4h2
@@ -254,7 +275,7 @@ R3
 r1
 !s85 0
 31
-R8
+R7
 !s107 C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext5_32.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enver/Desktop/Spring2020/Computer Ogranization/Projects/Project 2/project2/zeroext5_32.v|
 !s101 -O0
