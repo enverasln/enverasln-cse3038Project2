@@ -10,8 +10,22 @@ input stswrite;
 always @(a or b or gin or stswrite)
 begin
 	case(gin)
-	3'b010: sum=a+b; 		//ALU control line=010, ADD
-	3'b110: sum=a+1+(~b);	//ALU control line=110, SUB
+	3'b010:
+	begin
+		sum=a+b; 		//ALU control line=010, ADD
+		if(stswrite)
+		begin
+			status[0]=(sum[31] & ~a[31] & ~b[31]) | (~sum[31] & a[31] & b[31]); // overflow
+		end
+	end
+	3'b110:
+	begin
+		sum=a+1+(~b);	//ALU control line=110, SUB
+		if(stswrite)
+		begin
+			status[0]= (~sum[31]&a[31]&(~b[31]))|(sum[31]&~a[31]&b[31]); // overflow
+		end
+	end
 	3'b111: begin less=a+1+(~b);	//ALU control line=111, set on less than
 			if (less[31]) sum=1;	
 			else sum=0;
