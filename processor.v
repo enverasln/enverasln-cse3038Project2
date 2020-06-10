@@ -39,10 +39,12 @@ wire [1:0] jbout;
 wire zout,	//Zero output of ALU
 pcsrc,	//Output of AND gate with Branch and ZeroOut inputs
 //Control signals
-regdest,alusrc,memtoreg,regwrite,memread,memwrite,aluop1,aluop0;
+regdest,alusrc,memtoreg,regwrite,memread,memwrite,aluop1,aluop0,stswrite;
 wire [1:0] ext;
 wire [2:0] branch_jump;
 wire [5:0] fout;
+
+reg flag=1'b0;
 
 wire [2:0] status;
 //32-size register file (32 bit(1 word) for each register)
@@ -78,7 +80,10 @@ end
 assign dataa=registerfile[inst25_21];//Read register 1
 assign datab=registerfile[inst20_16];//Read register 2
 always @(posedge clk)
- registerfile[out1]= regwrite ? out7:registerfile[out1];//Write data to register
+begin
+	flag=1'b1;
+	registerfile[out1]= regwrite ? out7:registerfile[out1];//Write data to register
+end
 
 //read data from memory, sum stores address
 assign dpack={datmem[sum[5:0]],datmem[sum[5:0]+1],datmem[sum[5:0]+2],datmem[sum[5:0]+3]};
@@ -103,19 +108,17 @@ mult4_to_1_32 mult5(out5, extad, zextad, exshad, exshad,ext[0], ext[1]);
 //mux with MemToReg control
 mult2_to_1_32 mult3(out3, sum,dpack,memtoreg);
 
-jbcontrol jncon(jbout, branch_jump, status);
 //mux with (Branch&ALUZero) control
 //mult2_to_1_32 mult4(out4, adder1out,adder2out,pcsrc);
+
 mult4_to_1_32 mult4(out4, adder1out, adder2out, out3, {adder1out[31:28],instruc[25:0],2'b00}, jbout[0], jbout[1]); 
 
 // load pc
-always @(negedge clk)
-pc=out4;
 
 // alu, adder and control logic connections
 
 //ALU unit
-alu32 alu1(sum,out6,out2,status,gout);
+alu32 alu1(sum,out6,out2,status,gout,stswrite);
 
 //adder which adds PC and 4
 adder add1(pc,32'h4,adder1out);
@@ -125,7 +128,7 @@ adder add2(adder1out,sextad,adder2out);
 
 //Control unit
 control cont(instruc[31:26],instruc[5:0],regdest,alusrc,ext,memtoreg,regwrite,memread,memwrite,branch_jump,
-aluop1,aluop0,fout);
+aluop1,aluop0,fout,stswrite);
 
 //Sign extend unit
 signext sext(instruc[15:0],extad);
@@ -142,11 +145,14 @@ alucont acont(aluop1,aluop0,fout,gout);
 //Shift-left 2 unit
 shift shift2(sextad,extad);
 
+jbcontrol jncon(jbout, branch_jump, status);
 //AND gate
 //assign pcsrc=branch && zout; branch and jump eklecenecek
 
 //initialize datamemory,instruction memory and registers
 //read initial data from files given in hex
+always @(negedge clk & flag)
+pc=out4;
 initial
 begin
 $readmemh("initDm.dat",datmem); //read Data Memory

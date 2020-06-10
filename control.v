@@ -1,9 +1,10 @@
-module control(in,fun,regdest,alusrc,ext,memtoreg,regwrite,memread,memwrite,branch_jump,aluop1,aluop2, fout);
+module control(in,fun,regdest,alusrc,ext,memtoreg,regwrite,memread,memwrite,branch_jump,aluop1,aluop2, fout, stswrite);
 input [5:0] in, fun;
 output regdest,alusrc,memtoreg,regwrite,memread,memwrite,aluop1,aluop2;
 output [5:0] fout;
 output [1:0] ext;
 output [2:0] branch_jump;
+output stswrite;
 wire rformat,iformat,jformat,lw,sw,beq,ori,bltz,jmsub,baln,jrs,sll;
 
 // Define the R-Type instructions jmsub
@@ -30,13 +31,13 @@ assign memtoreg=lw|jmsub|jrs;
 assign regwrite=rformat|lw|ori|sll|jmsub|baln;
 assign memread=lw|jmsub|jrs;
 assign memwrite=sw;
-assign branch_jump = beq ? 3'b000 : bltz ? 3'b001 : baln ? 3'b010 : jmsub ? 3'b100 : 3'b101;
+assign branch_jump = beq ? 3'b000 : bltz ? 3'b001 : baln ? 3'b010 : jmsub ? 3'b100 : jrs ? 3'b101 : 3'b111;
 assign aluop1=rformat | jformat;
 assign aluop2=iformat | jformat;
 
 assign fout= ori ? 6'b100101 : bltz ? 6'b100010 : jrs ? 6'b100000 : fun;
 
-
+assign stswrite=~baln; // Status write sginal
 
 
 endmodule
